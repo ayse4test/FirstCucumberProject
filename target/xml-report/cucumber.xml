@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="28.263">
+    <testcase classname="walmart urun arama" name="arama kutusuna cesit cesit arama yapar" time="11.857">
+        <system-out>
+            <![CDATA[Given kullanici "https://www.walmart.com" walmart sayfasina gider...........passed
+And kullanici walmart arama kutusuna "calculator" yazar ve arar.............passed
+Then walmart sonuc sayisini ekrana yazdirir.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="walmart urun arama" name="arama kutusuna cesit cesit arama yapar 2" time="8.589">
+        <system-out>
+            <![CDATA[Given kullanici "https://www.walmart.com" walmart sayfasina gider...........passed
+And kullanici walmart arama kutusuna "watch" yazar ve arar..................passed
+Then walmart sonuc sayisini ekrana yazdirir.................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="walmart urun arama" name="arama kutusuna cesit cesit arama yapar 3" time="7.732">
+        <system-out>
+            <![CDATA[Given kullanici "https://www.walmart.com" walmart sayfasina gider...........passed
+And kullanici walmart arama kutusuna "flower" yazar ve arar.................passed
+Then walmart sonuc sayisini ekrana yazdirir.................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
+.....................passed
+Given kullanici listeden "Automotive" secer.................................passed
+Given kullanici amazon arama kutusuna "phoneholder" yazar...................failed
+Then kullanici sonuc sayisini ekrana yazdirir...............................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2SRDFOO', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\aa\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54832}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f744c6f0f7e7ad0950658a1b66b276c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at stepdefinitions.AmazonStepDefinitions.kullanici_arama_kutusuna_headphones_yazar(AmazonStepDefinitions.java:31)
+	at ✽.kullanici amazon arama kutusuna "phoneholder" yazar(file:///C:/Users/aa/IdeaProjects/FirstCucumberProject/src/test/resources/features/amazon_examples.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="kullanici amazonda cesitli aramalar yapıp sonuc alir" name="once dropdown kategori secme sonra urun arama. 2" time="1.133">
+        <failure message="element not interactable&#10;  (Session info: chrome=91.0.4472.77)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-2SRDFOO', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\aa\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54832}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 6f744c6f0f7e7ad0950658a1b66b276c" type="org.openqa.selenium.ElementNotInteractableException">
+            <![CDATA[Given kullanici amazon sayfasina  gider.....................................passed
+Given kullanici listeden "Baby" secer.......................................passed
+Given kullanici amazon arama kutusuna "stroller" yazar......................failed
+Then kullanici sonuc sayisini ekrana yazdirir...............................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.77)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2SRDFOO', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\aa\AppData\Local\T...}, goog:chromeOptions: {debuggerAddress: localhost:54832}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f744c6f0f7e7ad0950658a1b66b276c
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:106)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy16.sendKeys(Unknown Source)
+	at stepdefinitions.AmazonStepDefinitions.kullanici_arama_kutusuna_headphones_yazar(AmazonStepDefinitions.java:31)
+	at ✽.kullanici amazon arama kutusuna "stroller" yazar(file:///C:/Users/aa/IdeaProjects/FirstCucumberProject/src/test/resources/features/amazon_examples.feature:7)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="kullanici amazonda cesitli aramalar yapıp sonuc alir" name="once dropdown kategori secme sonra urun arama. 3" time="11.025">
+        <failure message="Cannot locate element with text: Book&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-2SRDFOO', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'&#10;Driver info: driver.version: unknown" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given kullanici amazon sayfasina  gider.....................................passed
+Given kullanici listeden "Book" secer.......................................failed
+Given kullanici amazon arama kutusuna "miserables" yazar....................skipped
+Then kullanici sonuc sayisini ekrana yazdirir...............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Cannot locate element with text: Book
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-2SRDFOO', ip: '192.168.1.42', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.10'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at stepdefinitions.AmazonStepDefinitions.kullanici_listeden_secer(AmazonStepDefinitions.java:25)
+	at ✽.kullanici listeden "Book" secer(file:///C:/Users/aa/IdeaProjects/FirstCucumberProject/src/test/resources/features/amazon_examples.feature:6)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
